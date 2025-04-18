@@ -6,12 +6,21 @@
   cursor: pointer;
   border: none;
 
+  @media (max-width:1024px) {
+    padding: 13px 20px;
+  }
+
   span {
     font-size: 18px;
     font-weight: 400;
     line-height: 22px;
     text-transform: uppercase;
     color: #fff;
+
+    @media (max-width:768px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   &:hover {

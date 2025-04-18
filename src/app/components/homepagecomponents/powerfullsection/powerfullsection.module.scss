@@ -4,13 +4,28 @@
   border-radius: 30px;
   padding: 120px 0;
 
+  @media (max-width: 1024px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
   .powerfullsection {
     display: flex;
     gap: 30px;
     justify-content: space-between;
 
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
     .powerfullsectionleft {
       max-width: 550px;
+
+      @media (max-width: 1024px) {
+        max-width: none;
+      }
 
       h1 {
         font-weight: 600;
@@ -20,6 +35,19 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 0 0 16px 0;
+
+        @media (max-width: 1024px){
+          font-size: 35px;
+          line-height: 45px;
+        }
+        @media (max-width: 768px){
+          font-size: 30px;
+          line-height: 40px;
+        }
+        @media (max-width: 576px){
+          font-size: 25px;
+          line-height: 30px;
+        }
       }
 
       p {
@@ -28,6 +56,14 @@
         line-height: 30px;
         color: #bfbfbf;
         margin: 0 0 42px 0;
+
+        @media (max-width: 768px){
+          font-size: 18px;
+          line-height: 20px;
+        }
+        @media (max-width: 576px){
+          font-size: 16px;
+        }
       }
     }
 
@@ -38,11 +74,30 @@
       flex-direction: column;
       gap: 50px;
 
+      @media (max-width: 1024px) {
+        max-width: none;
+        gap: 30px;
+      }
+      @media (max-width: 576px) {
+        gap: 20px;
+      }
+
       .powerfullsectionrightbox {
         display: flex;
         justify-content: space-between;
         padding: 34px 0 0 0;
+        gap: 30px;
         border-top: 1px solid #2f354b;
+
+        @media (max-width:768px) {
+          padding: 25px 0 0 0;
+          flex-direction: column;
+          gap: 20px;
+        }
+        @media (max-width:576px) {
+          padding: 20px 0 0 0;
+          gap: 18px;
+        }
 
         h1 {
           font-size: 24px;
@@ -54,14 +109,31 @@
           span {
             margin: 0 20px 0 0;
           }
-        }
 
+          @media (max-width:768px) {
+            font-size: 20px;
+            line-height: 24px;
+          }
+          @media (max-width:576px) {
+            font-size: 18px;
+            line-height: 20px;
+          }
+        }
+        
         p {
           max-width: 450px;
           font-weight: 400;
           font-size: 18px;
           line-height: 30px;
-          color: #BFBFBF;
+          color: #bfbfbf;
+          @media (max-width:768px) {
+            font-size: 18px;
+            line-height: 20px;
+            max-width: none;
+          }
+          @media (max-width:576px) {
+            font-size: 16px;
+          }
         }
       }
     }

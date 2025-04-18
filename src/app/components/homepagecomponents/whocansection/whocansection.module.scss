@@ -4,6 +4,13 @@
   background: #111427b2;
   border-radius: 30px;
 
+  @media (max-width: 1024px) {
+    padding: 100px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+
   .whocansection {
     .whocansectiontitle {
       max-width: 939px;
@@ -17,6 +24,19 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
+
+        @media (max-width: 1024px) {
+          font-size: 35px;
+          line-height: 45px;
+        }
+        @media (max-width: 768px) {
+          font-size: 30px;
+          line-height: 40px;
+        }
+        @media (max-width: 576px) {
+          font-size: 25px;
+          line-height: 30px;
+        }
       }
 
       p {
@@ -27,6 +47,14 @@
         color: #bfbfbf;
         max-width: 705px;
         margin: 0 auto;
+
+        @media (max-width: 768px) {
+          font-size: 18px;
+          line-height: 20px;
+        }
+        @media (max-width: 576px) {
+          font-size: 16px;
+        }
       }
     }
 
@@ -35,6 +63,13 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 40px;
       margin: 68px 0 0 0;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      @media (max-width: 768px) {
+        margin: 50px 0 0 0;
+      }
 
       .whocancard {
         height: 100%;
@@ -45,10 +80,20 @@
         display: flex;
         gap: 30px;
 
+        @media (max-width: 1024px) {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          padding: 20px;
+        }
+
         .whocancardimage {
           max-width: 300px;
           width: 100%;
           height: 340px;
+
+          @media (max-width:1024px) {
+            max-width: none;
+          }
 
           img {
             border-radius: 20px;
@@ -83,7 +128,7 @@
             font-size: 18px;
             font-weight: 400;
             line-height: 28px;
-            color: #BFBFBF;
+            color: #bfbfbf;
           }
         }
       }

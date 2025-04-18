@@ -5,6 +5,13 @@
   background-repeat: no-repeat;
   position: relative;
 
+  @media (max-width: 1024px) {
+    padding: 150px 0 100px 0;
+  }
+  @media (max-width: 768px) {
+    padding: 120px 0 60px 0;
+  }
+
   .homeherobannerhshapedbgimage {
     position: absolute;
     bottom: 0;
@@ -30,20 +37,56 @@
       line-height: 86px;
       color: #fff;
       text-align: center;
+      margin: 0 0 18px 0;
+
+      @media (max-width: 1024px) {
+        font-size: 45px;
+        line-height: 60px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 35px;
+        line-height: 50px;
+      }
+      @media (max-width: 568px) {
+        font-size: 25px;
+        line-height: 40px;
+      }
 
       p {
         display: inline;
         position: relative;
-        margin: 0 50px 0 40px;
+        margin: 0 40px;
+
+        @media (max-width: 1024px) {
+          margin: 0 30px;
+        }
+        @media (max-width: 576px) {
+          margin: 0 20px;
+        }
 
         img {
           position: absolute;
           top: 50%;
-          transform: translateY(-50%) translateX(-50%);
-          left: 50%;
+          transform: translateY(-50%);
+          left: -45px;
           width: 350px;
-          height: 100px;
+          height: auto;
           z-index: 1;
+          object-fit: contain;
+
+          @media (max-width: 1024px) {
+            left: -25px;
+            width: 250px;
+          }
+
+          @media (max-width: 768px) {
+            width: 200px;
+          }
+          @media (max-width: 576px) {
+            width: 150px;
+            left: -21px;
+          }
         }
 
         span {
@@ -57,6 +100,15 @@
       font-weight: 400;
       line-height: 24px;
       color: #bfbfbf;
+      text-align: center;
+
+      @media (max-width:768px) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+      @media (max-width:576px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -67,6 +119,10 @@
     border: 1px solid #2f354b;
     padding: 30px;
     border-radius: 30px;
+
+    @media (max-width:768px) {
+      padding: 20px;
+    }
 
     .herobannereffectbuttonmainflx {
       display: flex;
@@ -95,6 +151,18 @@
             line-height: 22px;
             color: #fff;
             text-transform: uppercase;
+
+            @media (max-width:768px) {
+              font-size: 16px;
+              line-height: 20px;
+            }
+          }
+
+          svg {
+            @media (max-width:768px) {
+              width: 25px;
+              height: 25px;
+            }
           }
 
           &:hover {
@@ -110,14 +178,28 @@
       border: 1px solid #3e4a5f;
       border-radius: 20px;
 
-      .herobannerchat:nth-child(2n + 2) {
-        border-right: none;
+      @media (max-width:768px) {
+        grid-template-columns: repeat(1,1fr);
       }
 
+      .herobannerchat:nth-child(2n + 2) {
+        border-right: none;
+        
+        @media (max-width:768px) {
+          border-bottom: none;
+        }
+      }
+      
       .herobannerchat {
         padding: 30px;
         border-right: 1px solid #3e4a5f;
         position: relative;
+        
+        @media (max-width:768px) {
+          padding: 20px;
+          border-right: none;
+          border-bottom: 1px solid #3e4a5f;
+        }
 
         textarea {
           width: 100%;
@@ -132,6 +214,14 @@
 
           &:focus {
             outline: none;
+          }
+
+          @media (max-width:768px) {
+            height: 300px;
+            font-size: 18px;
+          }
+          @media (max-width:576px) {
+            font-size: 16px;
           }
         }
 
@@ -150,6 +240,14 @@
               font-weight: 400;
               line-height: 23px;
               color: #fff;
+
+              @media (max-width:768px) {
+                font-size: 18px;
+                line-height: 20px;
+              }
+              @media (max-width:576px) {
+                font-size: 18px;
+              }
             }
           }
         }

@@ -3,6 +3,7 @@ import Logo from "./../../../assets/icons/logo";
 import Link from "next/link";
 import CommonButton from "@/app/components/commonbutton/button";
 import Commonbuttonsecond from "@/app/components/commonbuttonsecond/commonbuttonsecond";
+import Menuicon from './../../../assets/icons/menuicon';
 
 export default function Header() {
   return (
@@ -23,7 +24,10 @@ export default function Header() {
           </div>
           <div className={styles.headerbuttons}>
             <CommonButton Text="Sign In" />
-            <Commonbuttonsecond Text="Log In"/>
+            <Commonbuttonsecond Text="Log In" />
+          </div>
+          <div className={styles.headermenuicon}>
+            <Menuicon />
           </div>
         </div>
       </div>
