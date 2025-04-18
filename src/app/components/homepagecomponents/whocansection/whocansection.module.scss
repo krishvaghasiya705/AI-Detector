@@ -1,0 +1,92 @@
+.whocansectionmain {
+  margin: 0 20px;
+  padding: 120px 0;
+  background: #111427b2;
+  border-radius: 30px;
+
+  .whocansection {
+    .whocansectiontitle {
+      max-width: 939px;
+      margin: 0 auto;
+      h1 {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 61px;
+        margin: 0 0 16px 0;
+        background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        text-align: center;
+        color: #bfbfbf;
+        max-width: 705px;
+        margin: 0 auto;
+      }
+    }
+
+    .whocancardsgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin: 68px 0 0 0;
+
+      .whocancard {
+        height: 100%;
+        background: #111427b2;
+        border: 1px solid #2f354b;
+        border-radius: 22px;
+        padding: 30px;
+        display: flex;
+        gap: 30px;
+
+        .whocancardimage {
+          max-width: 300px;
+          width: 100%;
+          height: 340px;
+
+          img {
+            border-radius: 20px;
+          }
+        }
+
+        .whocancardcontent {
+          max-width: 370px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .whocancardcontenticondiv {
+            padding: 20px;
+            background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+            border-radius: 50%;
+            width: fit-content;
+
+            svg {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          h5 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29px;
+            color: #fff;
+            margin: 0 0 12px 0;
+          }
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #BFBFBF;
+          }
+        }
+      }
+    }
+  }
+}

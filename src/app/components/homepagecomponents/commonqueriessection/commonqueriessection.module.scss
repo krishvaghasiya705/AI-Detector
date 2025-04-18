@@ -1,0 +1,102 @@
+.commonqueriessectionmain {
+  padding: 120px 0;
+
+  .commonqueriessection {
+    .commonqueriessectiontitle {
+      max-width: 839px;
+      margin: 0 auto;
+
+      h1 {
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 61px;
+        text-align: center;
+        background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        color: #bfbfbf;
+      }
+    }
+
+    .commonqueriessectionflx {
+      display: flex;
+      margin: 60px 0 0 0;
+      gap: 80px;
+      .commonquerisfaqmain {
+        max-width: 840px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .commonquerisfaqboxopen {
+          .commonplusicon {
+            svg {
+              transform: rotate(45deg);
+            }
+          }
+        }
+
+        .commonquerisfaqmessage {
+          padding: 30px 65px 0 30px;
+          transition: 0.4s ease-in-out;
+
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #b2b2b5;
+          }
+        }
+
+        .commonquerisfaqbox,
+        .commonquerisfaqboxopen {
+          background: #111427b2;
+          border: 1px solid #2f354b;
+          border-radius: 18px;
+          padding: 31px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.4s ease-in-out;
+
+          .faqtitle {
+            p {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 24px;
+              color: #fff;
+            }
+          }
+
+          .commonplusicon {
+            width: 28px;
+            height: 28px;
+            overflow: hidden;
+            svg {
+              width: 28px;
+              height: 28px;
+              transition: 0.4s ease-in-out;
+            }
+          }
+        }
+      }
+
+      .commonqueriessectionflximage {
+        max-width: 640px;
+        width: 100%;
+        height: 570px;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+    }
+  }
+}

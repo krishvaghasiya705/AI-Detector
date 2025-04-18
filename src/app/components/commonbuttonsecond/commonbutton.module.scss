@@ -1,0 +1,26 @@
+.commonbuttonsecondmain {
+  background: linear-gradient(82.27deg, #00c0ff 0%, #421bb8 100%);
+  padding: 2px;
+  border-radius: 50px;
+
+  .commonbuttonsecond {
+    background-color: #0e1020;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    padding: 16px 30px;
+    transition: 0.4s ease-in-out;
+
+    span {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+    }
+  }
+}

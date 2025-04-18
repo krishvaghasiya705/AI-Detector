@@ -1,0 +1,159 @@
+.homeherobannermain {
+  padding: 210px 0 140px 0;
+  background-image: url("../../../../assets/image/starsbackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .homeherobannerhshapedbgimage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+
+    img {
+      max-width: 1197px;
+    }
+  }
+
+  .herobannertopcontent {
+    position: relative;
+    z-index: 1;
+    max-width: 964px;
+    margin: 0 auto 60px auto;
+    h1 {
+      font-size: 60px;
+      font-weight: 600;
+      line-height: 86px;
+      color: #fff;
+      text-align: center;
+
+      p {
+        display: inline;
+        position: relative;
+        margin: 0 50px 0 40px;
+
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) translateX(-50%);
+          left: 50%;
+          width: 350px;
+          height: 100px;
+          z-index: 1;
+        }
+
+        span {
+          position: relative;
+          z-index: 2;
+        }
+      }
+    }
+    .herobannerparagraph {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #bfbfbf;
+    }
+  }
+
+  .herobannerchatsectionmain {
+    position: relative;
+    z-index: 1;
+    background-color: #111427b2;
+    border: 1px solid #2f354b;
+    padding: 30px;
+    border-radius: 30px;
+
+    .herobannereffectbuttonmainflx {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 0 0 18px 0;
+      .herobannereffectbuttonmain {
+        background: linear-gradient(82.27deg, #00c0ff 0%, #421bb8 100%);
+        padding: 2px;
+        border-radius: 50px;
+
+        .herobannereffectbutton {
+          background-color: #0e1020;
+          border-radius: 50px;
+          border: none;
+          cursor: pointer;
+          padding: 11px 20px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          transition: 0.4s ease-in-out;
+
+          span {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #fff;
+            text-transform: uppercase;
+          }
+
+          &:hover {
+            background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+          }
+        }
+      }
+    }
+
+    .herobannerchatboxgrid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border: 1px solid #3e4a5f;
+      border-radius: 20px;
+
+      .herobannerchat:nth-child(2n + 2) {
+        border-right: none;
+      }
+
+      .herobannerchat {
+        padding: 30px;
+        border-right: 1px solid #3e4a5f;
+        position: relative;
+
+        textarea {
+          width: 100%;
+          height: 480px;
+          border: none;
+          resize: none;
+          background: transparent;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          color: #bfbfbf;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .herobannerchatbottom {
+          position: absolute;
+          bottom: 30px;
+          left: 30px;
+          width: calc(100% - 60px);
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .herobannerchataitotalwords {
+            span {
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 23px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

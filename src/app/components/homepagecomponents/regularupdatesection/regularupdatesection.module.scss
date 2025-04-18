@@ -1,0 +1,78 @@
+.regularupdatesectionmain {
+    padding: 120px 0;
+    background: #111427B2;
+    border-radius: 30px;
+    margin: 0 20px;
+
+    .regularupdatesection {
+        .regularupdatesectiontitle {
+            h1 {
+                font-size: 50px;
+                font-weight: 600;
+                line-height: 61px;
+                text-align: center;
+                background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .regularupdatesectioncardsgrd {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 30px;
+            margin: 60px 0 0 0;
+
+            .regularupdatecard {
+                .regularupdatecardimage {
+                    height: 300px;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    margin: 0 0 14px 0;
+                }
+            
+                .regularupdatecardcontent {
+
+                    .regularupdatecardnameanddate {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 30px;
+                        margin: 0 0 8px 0;
+
+                        p {
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: #B2B2B5;
+                        }
+                        span {
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                            color: #B2B2B5;
+                        }
+                    }
+
+                    .regularupdatecardparagraph {
+                        margin: 0 0 22px 0;
+                        p {
+                            font-size: 22px;
+                            font-weight: 500;
+                            line-height: 27px;
+                            color: #fff;
+                        }
+                    }
+
+                    a {
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 22px;
+                        color: #fff;
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+    }
+}
