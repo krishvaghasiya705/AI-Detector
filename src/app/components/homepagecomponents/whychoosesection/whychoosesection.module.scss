@@ -64,12 +64,13 @@
       max-width: 480px;
 
       @media (max-width: 1024px) {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
         max-width: none;
       }
       @media (max-width: 768px) {
-        flex-direction: column;
-        gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
       }
 
       .whychoosecardbox {
@@ -79,20 +80,37 @@
         padding: 30px;
 
         .whychoosecardboxtitle {
-          display: grid;
-          grid-template-columns: 80px 1fr;
+          display: flex;
           gap: 24px;
           align-items: center;
           margin: 0 0 30px 0;
+
+          @media (max-width: 576px) {
+            gap: 15px;
+            margin: 0 0 20px 0;
+          }
 
           .whychoosecardboxtitleicon {
             padding: 20px;
             border-radius: 50%;
             background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
 
+            @media (max-width: 768px) {
+              padding: 15px;
+            }
+
             svg {
               width: 40px;
               height: 40px;
+
+              @media (max-width: 768px) {
+                width: 30px;
+                height: 30px;
+              }
+              @media (max-width: 576px) {
+                width: 20px;
+                height: 20px;
+              }
             }
           }
 
@@ -109,6 +127,11 @@
           font-weight: 400;
           line-height: 30px;
           color: #bfbfbf;
+
+          @media (max-width: 576px) {
+            font-size: 16px;
+            line-height: 20px;
+          }
         }
       }
     }
