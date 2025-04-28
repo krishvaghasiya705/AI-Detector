@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
           <div className={styles.footersubfieldsmain}>
             <input type="email" placeholder="Enter your email" />
-            <CommonButton Text="Subscribe Now" />
+            <CommonButton Text="Subscribe Now" Icon="" />
           </div>
         </div>
         <div className={styles.footercontentmain}>

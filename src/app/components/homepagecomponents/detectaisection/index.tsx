@@ -23,10 +23,12 @@ export default function Detctaisection() {
             <div className={styles.detectaicardmain}>
               <div className={styles.detectaicard}>
                 <div className={styles.detectcardcontentbox}>
-                  <div className={styles.detectcardsiconbox}>
-                    <Documenticon />
+                  <div>
+                    <div className={styles.detectcardsiconbox}>
+                      <Documenticon />
+                    </div>
+                    <h3>Upload or Paste Text</h3>
                   </div>
-                  <span>Upload or Paste Text</span>
                   <p>
                     Easily upload your document or paste the text you want to
                     analyze. The tool is designed for simplicity, requiring no
@@ -40,10 +42,12 @@ export default function Detctaisection() {
             <div className={styles.detectaicardmainsc}>
               <div className={styles.detectaicard}>
                 <div className={styles.detectcardcontentbox}>
-                  <div className={styles.detectcardsiconbox}>
-                    <Documentfindicon />
+                  <div>
+                    <div className={styles.detectcardsiconbox}>
+                      <Documentfindicon />
+                    </div>
+                    <h3>Instant Analysis</h3>
                   </div>
-                  <span>Instant Analysis</span>
                   <p>
                     Our AI detection model scans the content, identifying
                     patterns and markers typical of AI-generated text in just
@@ -58,10 +62,12 @@ export default function Detctaisection() {
             <div className={styles.detectaicardmain}>
               <div className={styles.detectaicard}>
                 <div className={styles.detectcardcontentbox}>
-                  <div className={styles.detectcardsiconbox}>
-                    <Papericon />
+                  <div>
+                    <div className={styles.detectcardsiconbox}>
+                      <Papericon />
+                    </div>
+                    <h3>Receive a Detailed Report</h3>
                   </div>
-                  <span>Receive a Detailed Report</span>
                   <p>
                     Get a comprehensive report with probability scores and
                     confidence levels, giving you a clear assessment of your

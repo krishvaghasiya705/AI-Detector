@@ -1,35 +1,44 @@
+@import "@/styles/theme/mixin.scss";
+
 .commonbuttonsecondmain {
-  background: linear-gradient(82.27deg, #00c0ff 0%, #421bb8 100%);
+  background: var(--gradientbutton);
   padding: 2px;
   border-radius: 50px;
+  border: none;
 
   .commonbuttonsecond {
-    background-color: #0e1020;
+    background-color: var(--darkblue2);
     border-radius: 50px;
-    border: none;
     cursor: pointer;
     padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     transition: 0.4s ease-in-out;
 
     @media (max-width:1024px) {
       padding: 13px 20px;
     }
 
+    svg {
+      @media (max-width: 768px) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
     span {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 22px;
-      color: #fff;
+      @include font18;
+      color: var(--white);
       text-transform: uppercase;
 
       @media (max-width:768px) {
-        font-size: 16px;
-        line-height: 20px;
+        @include font16;
       }
     }
 
     &:hover {
-      background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+      background: var(--gradientbuttonfilled);
     }
   }
 }

@@ -9,7 +9,7 @@ export default function Whychoosesection() {
   return (
     <div className={styles.whychoosesectionmain}>
       <div className="container">
-        <h1 className={styles.whychoosetitle}>Why Choose Our AI Content Detector?</h1>
+        <h1 className={styles.whychoosetitlemobile}>Why Choose Our AI Content Detector?</h1>
         <div className={styles.whychoosesection}>
           <div className={styles.circleimage}>
             <Image

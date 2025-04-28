@@ -1,6 +1,8 @@
+@import "@/styles/theme/mixin.scss";
+
 .powerfullsectionmain {
   margin: 0 20px;
-  background-color: #111427b2;
+  background-color: var(--darkblue);
   border-radius: 30px;
   padding: 120px 0;
 
@@ -28,41 +30,33 @@
       }
 
       h1 {
-        font-weight: 600;
-        font-size: 50px;
-        line-height: 61px;
-        background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include font50;
+        @include fontgradient;
         margin: 0 0 16px 0;
-
-        @media (max-width: 1024px){
-          font-size: 35px;
-          line-height: 45px;
+        
+        @media (max-width: 1024px) {
+          @include font45;
         }
-        @media (max-width: 768px){
-          font-size: 30px;
-          line-height: 40px;
+        @media (max-width: 768px) {
+          @include font40;
+          margin: 0 0 40px 0;
         }
-        @media (max-width: 576px){
-          font-size: 25px;
-          line-height: 30px;
+        @media (max-width: 576px) {
+          @include font33;
+          margin: 0 0 30px 0;
         }
       }
 
       p {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 30px;
-        color: #bfbfbf;
+        @include font20;
+        color: var(--lightgray2);
         margin: 0 0 42px 0;
-
+        
         @media (max-width: 768px){
-          font-size: 18px;
-          line-height: 20px;
+          @include font18;
         }
         @media (max-width: 576px){
-          font-size: 16px;
+          @include font16;
         }
       }
     }
@@ -87,7 +81,7 @@
         justify-content: space-between;
         padding: 34px 0 0 0;
         gap: 30px;
-        border-top: 1px solid #2f354b;
+        border-top: 1px solid var(--lightblue);
 
         @media (max-width:768px) {
           padding: 25px 0 0 0;
@@ -100,39 +94,33 @@
         }
 
         h1 {
-          font-size: 24px;
-          font-weight: 500;
-          line-height: 29px;
-          color: #fff;
+          @include font24;
+          color: var(--white);
           max-width: 330px;
-
+          width: 100%;
+          
           span {
             margin: 0 20px 0 0;
           }
-
+          
           @media (max-width:768px) {
-            font-size: 20px;
-            line-height: 24px;
+            @include font20;
           }
           @media (max-width:576px) {
-            font-size: 18px;
-            line-height: 20px;
+            @include font18;
           }
         }
         
         p {
+          width: 100%;
           max-width: 450px;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 30px;
-          color: #bfbfbf;
+          @include font18;
+          color: var(--lightgray2);
           @media (max-width:768px) {
-            font-size: 18px;
-            line-height: 20px;
             max-width: none;
           }
           @media (max-width:576px) {
-            font-size: 16px;
+            @include font16;
           }
         }
       }

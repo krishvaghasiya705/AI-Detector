@@ -1,0 +1,24 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --lightgray: #999999;
+  --lightgray2: #bfbfbf;
+  --lightgray3: #ffffff70;
+  --lightgray4: #b2b2b5;
+  --darkgray: #3e4a5f;
+  --darkgray2: #FFFFFF24;
+  --bodyblack: #060610;
+  --darkblue: #111427b2;
+  --darkblue2: #0e1020;
+  --darkblue3: #101325;
+  --lightblue: #2f354b;
+  --lightpink: #c0acff;
+  --lightcyan: #0d9cef4d;
+  --lightcyan2: #31393c;
+  --lightcyan3: #657373;
+  --transparent: transparent;
+  --transparent2: #00000050;
+  --gradientbutton: linear-gradient(82.27deg, #00c0ff 0%, #421bb8 100%);
+  --gradientbuttonfilled: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+  --gradientedtext: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
+}

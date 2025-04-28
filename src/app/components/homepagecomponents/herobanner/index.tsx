@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./herobanner.module.scss";
 import Image from "next/image";
-import dectbox from "@/assets/image/detectbox.png";
 import shapedbackground from "@/assets/image/shapedbackground.png";
 import CommonButton from "../../commonbutton/button";
 import Commonbuttonsecond from "../../commonbuttonsecond/commonbuttonsecond";
@@ -17,10 +16,9 @@ export default function Herobanner() {
         <div className={styles.herobannertopcontent}>
           <h1>
             Instantly{" "}
-            <p>
-              <span>Detect AI</span>{" "}
-              <Image src={dectbox} alt="dectbox" width={1000} height={1000} />
-            </p>{" "}
+            <div className={styles.herobannerdetectaibox}>
+              <span>Detect AI</span>
+            </div>{" "}
             Generated Content with Confidence
           </h1>
           <p className={styles.herobannerparagraph}>
@@ -30,18 +28,20 @@ export default function Herobanner() {
         </div>
         <div className={styles.herobannerchatsectionmain}>
           <div className={styles.herobannereffectbuttonmainflx}>
-            <div className={styles.herobannereffectbuttonmain}>
+            <Commonbuttonsecond Text="Easy" Icon={<Sparkle/>} />
+            <Commonbuttonsecond Text="Aggresive" Icon={<Sparkle/>} />
+            {/* <div className={styles.herobannereffectbuttonmain}>
               <button type="button" className={styles.herobannereffectbutton}>
                 <Sparkle />
                 <span>Easy</span>
               </button>
-            </div>
-            <div className={styles.herobannereffectbuttonmain}>
+            </div> */}
+            {/* <div className={styles.herobannereffectbuttonmain}>
               <button type="button" className={styles.herobannereffectbutton}>
                 <Sparkle />
                 <span>Aggresive</span>
               </button>
-            </div>
+            </div> */}
           </div>
           <div className={styles.herobannerchatboxgrid}>
             <div className={styles.herobannerchat}>
@@ -50,13 +50,13 @@ export default function Herobanner() {
                 <div className={styles.herobannerchataitotalwords}>
                   <span>0/1000</span>
                 </div>
-                <Commonbuttonsecond Text="Check For AI" />
+                <Commonbuttonsecond Text="Check For AI" Icon="" />
               </div>
             </div>
             <div className={styles.herobannerchat}>
               <textarea></textarea>
               <div className={styles.herobannerchatbottom}>
-                <CommonButton Text="Humanize" />
+                <CommonButton Text="Humanize" Icon="" />
               </div>
             </div>
           </div>

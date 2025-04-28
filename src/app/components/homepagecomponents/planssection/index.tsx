@@ -1,10 +1,13 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./planssection.module.scss";
 import CommonButton from "./../../commonbutton/button";
 import Falseicon from "./../../../../assets/icons/falseicon";
 import Trueicon from "./../../../../assets/icons/trueicon";
 
 export default function Planssection() {
+  const [isMonthly, setIsMonthly] = useState(true);
+
   return (
     <div className={styles.planssectionmain}>
       <div className="container">
@@ -16,10 +19,22 @@ export default function Planssection() {
             <div className={styles.plantypedetailsboxmain}>
               <div className={styles.palntimelinemain}>
                 <div className={styles.palntimelinebuttons}>
-                  <button type="button" className={styles.planbutton}>
+                  <button
+                    type="button"
+                    className={`${styles.planbutton} ${
+                      isMonthly ? styles.planbuttonactive : ""
+                    }`}
+                    onClick={() => setIsMonthly(true)}
+                  >
                     <span>Monthly</span>
                   </button>
-                  <button type="button" className={styles.planbuttonblank}>
+                  <button
+                    type="button"
+                    className={`${styles.planbutton} ${
+                      !isMonthly ? styles.planbuttonactive : ""
+                    }`}
+                    onClick={() => setIsMonthly(false)}
+                  >
                     <span>Yearly</span>
                   </button>
                 </div>
@@ -33,7 +48,9 @@ export default function Planssection() {
                   </div>
                   <div className={styles.slectedplandetailsgrd}>
                     <Trueicon />
-                    <p>Analyze up to <span>1,00,000</span> words for AI detection</p>
+                    <p>
+                      Analyze up to <span>1,00,000</span> words for AI detection
+                    </p>
                   </div>
                   <div className={styles.slectedplandetailsgrd}>
                     <Falseicon />
@@ -49,7 +66,10 @@ export default function Planssection() {
                   </div>
                   <div className={styles.slectedplandetailsgrd}>
                     <Trueicon />
-                    <p>Transform up to <span>15,00</span> words with the AI Humanizer</p>
+                    <p>
+                      Transform up to <span>15,00</span> words with the AI
+                      Humanizer
+                    </p>
                   </div>
                   <div className={styles.slectedplandetailsgrd}>
                     <Trueicon />

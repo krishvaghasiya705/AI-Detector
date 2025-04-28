@@ -1,7 +1,9 @@
+@import "@/styles/theme/mixin.scss";
+
 .planssectionmain {
   padding: 120px 0;
   margin: 0 20px;
-  background: #111427b2;
+  background: var(--darkblue);
   border-radius: 30px;
 
   @media (max-width: 1024px) {
@@ -13,31 +15,25 @@
   }
 
   .planssection {
-    .planbutton {
-      background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
-      border-radius: 60px;
-      padding: 16px 30px;
+    .planbuttonactive {
+      background: var(--gradientbuttonfilled) !important;
       transition: 0.4s ease-in-out;
-      cursor: pointer;
-      border: none;
+      border: none !important;
 
       span {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
-        text-transform: uppercase;
-        color: #fff;
+        color: var(--white) !important;
       }
       &:hover {
-        background: #fff;
+        background: var(--white) !important;
 
         span {
-          color: #060610;
+          color: var(--bodyblack) !important;
         }
       }
     }
-    .planbuttonblank {
-      background: transparent;
+
+    .planbutton {
+      background: var(--transparent);
       border-radius: 60px;
       padding: 16px 30px;
       transition: 0.4s ease-in-out;
@@ -45,36 +41,35 @@
       border: none;
 
       span {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
-        text-transform: uppercase;
-        color: #fff;
+        @include font18;
+        color: var(--white);
+      }
+
+      @media (max-width: 1024px) {
+        padding: 12px 20px;
+      }
+      @media (max-width: 768px) {
+        padding: 10px 15px;
       }
     }
 
     .planssectiontitle {
       margin: 0 0 60px 0;
       h1 {
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 61px;
+        @include font50;
         text-align: center;
-        background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include fontgradient;
 
         @media (max-width: 1024px) {
-          font-size: 45px;
-          line-height: 55px;
+          @include font45;
         }
         @media (max-width: 768px) {
-          font-size: 40px;
-          line-height: 45px;
+          @include font40;
+          margin: 0 0 40px 0;
         }
         @media (max-width: 576px) {
-          font-size: 35px;
-          line-height: 40px;
+          @include font33;
+          margin: 0 0 30px 0;
         }
       }
     }
@@ -90,8 +85,8 @@
 
       .plantypedetailsboxmain {
         padding: 40px;
-        background: #111427b2;
-        border: 1px solid #2f354b;
+        background: var(--darkblue);
+        border: 1px solid var(--lightblue);
         border-radius: 22px;
 
         @media (max-width: 1024px) {
@@ -116,25 +111,26 @@
           }
 
           .palntimelinebuttons {
-            background-color: #ffffff70;
+            background-color: var(--lightgray3);
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             border-radius: 50px;
             width: 280px;
+
+            @media (max-width: 576px) {
+              width: 100%;
+            }
           }
         }
 
         .slectedplandetails {
           h5 {
-            font-size: 24px;
-            font-weight: 600;
-            line-height: 29px;
-            color: #fff;
+            @include font24;
+            color: var(--white);
             margin: 0 0 30px 0;
 
             @media (max-width: 1024px) {
-              font-size: 20px;
-              list-style: 24px;
+              @include font20;
               margin: 0 0 20px 0;
             }
 
@@ -148,11 +144,11 @@
             flex-direction: column;
             gap: 24px;
 
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
               gap: 20px;
             }
 
-            @media (max-width:576px) {
+            @media (max-width: 576px) {
               gap: 15px;
             }
 
@@ -161,44 +157,40 @@
               grid-template-columns: 26px 1fr;
               gap: 14px;
               align-items: center;
-              
-              @media (max-width:768px) {
+
+              @media (max-width: 768px) {
                 grid-template-columns: 20px 1fr;
               }
-              
-              @media (max-width:576px) {
+
+              @media (max-width: 576px) {
                 grid-template-columns: 18px 1fr;
               }
-              
+
               svg {
                 width: 26px;
                 height: 26px;
-                
-                @media (max-width:768px) {
+
+                @media (max-width: 768px) {
                   width: 20px;
                   height: 20px;
                 }
-                
-                @media (max-width:576px) {
+
+                @media (max-width: 576px) {
                   width: 18px;
                   height: 18px;
                 }
-
               }
 
               p {
-                font-size: 18px;
-                font-weight: 400;
-                line-height: 26px;
-                color: #b2b2b5;
+                @include font18;
+                color: var(--lightgray4);
 
                 span {
-                  color: #fff;
+                  color: var(--white);
                 }
 
                 @media (max-width: 576px) {
-                  font-size: 16px;
-                  line-height: 20px;
+                  @include font16;
                 }
               }
             }
@@ -220,26 +212,18 @@
         }
 
         .plantypeboxactive {
-          background: linear-gradient(
-            85.93deg,
-            #00c0ff 0%,
-            #4218b8 100%
-          ) !important;
+          background: var(--gradientbuttonfilled) !important;
 
           .cuscheckbox {
-            border-color: #fff !important;
-            background: linear-gradient(
-              85.93deg,
-              #00c0ff 0%,
-              #4218b8 100%
-            ) !important;
+            border-color: var(--white) !important;
+            background: var(--gradientbuttonfilled) !important;
           }
 
           .planbutton {
-            background: #fff;
+            background: var(--white) !important;
 
             span {
-              color: #060610;
+              color: var(--bodyblack);
             }
           }
         }
@@ -247,9 +231,9 @@
         .plantypebox,
         .plantypeboxactive {
           cursor: pointer;
-          border: 1px solid #2f354b;
+          border: 1px solid var(--lightblue);
           border-radius: 22px;
-          background: #111427b2;
+          background: var(--darkblue);
           padding: 33px 40px;
           display: flex;
           align-items: center;
@@ -266,10 +250,10 @@
             align-items: start;
             gap: 20px;
           }
-          
+
           @media (max-width: 576px) {
             padding: 18px 20px;
-            align-items: center;
+            align-items: start;
             gap: 15px;
           }
 
@@ -280,12 +264,14 @@
             gap: 30px;
             width: 100%;
 
-            @media (max-width:768px) {
+            @media (max-width: 768px) {
               gap: 20px;
             }
 
-            @media (max-width:576px) {
+            @media (max-width: 576px) {
               gap: 15px;
+              flex-direction: column;
+              align-items: start;
             }
 
             .planname {
@@ -293,17 +279,17 @@
               align-items: center;
               gap: 24px;
 
-              @media (max-width:768px) {
+              @media (max-width: 768px) {
                 gap: 20px;
               }
-  
-              @media (max-width:576px) {
+
+              @media (max-width: 576px) {
                 gap: 15px;
               }
 
               .cuscheckbox {
-                border: 2px solid #2f354b;
-                background: #101325;
+                border: 2px solid var(--lightblue);
+                background: var(--darkblue3);
                 width: 26px;
                 height: 26px;
                 border-radius: 50%;
@@ -311,17 +297,14 @@
               }
 
               p {
-                font-size: 24px;
-                font-weight: 600;
-                line-height: 29px;
-                color: #fff;
-
+                @include font24;
+                color: var(--white);
+                
                 @media (max-width: 768px) {
-                  font-size: 18px;
-                  line-height: 20px;
+                  @include font18;
                 }
                 @media (max-width: 576px) {
-                  font-size: 16px;
+                  @include font16;
                 }
               }
             }
@@ -332,29 +315,23 @@
               gap: 8px;
 
               h6 {
-                font-size: 30px;
-                font-weight: 700;
-                line-height: 37px;
+                @include font30;
                 text-align: right;
-                color: #fff;
-
-                @media (max-width:768px) {
-                  font-size: 28px;
-                  line-height: 32px;
+                color: var(--white);
+                
+                @media (max-width: 768px) {
+                  @include font28;
                 }
-
-                @media (max-width:576px) {
-                  font-size: 25px;
-                  line-height: 30px;
+                
+                @media (max-width: 576px) {
+                  @include font25;
                 }
               }
 
               span {
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 22px;
+                @include font18;
                 text-align: right;
-                color: #fff;
+                color: var(--white);
                 opacity: 0.6;
               }
             }
@@ -363,25 +340,22 @@
           .planbutton {
             width: 100%;
             max-width: 191px;
+            background: var(--gradientbuttonfilled);
           }
 
           &:hover {
-            background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+            background: var(--gradientbuttonfilled);
 
             .cuscheckbox {
-              border-color: #fff !important;
-              background: linear-gradient(
-                85.93deg,
-                #00c0ff 0%,
-                #4218b8 100%
-              ) !important;
+              border-color: var(--white) !important;
+              background: var(--gradientbuttonfilled) !important;
             }
 
             .planbutton {
-              background: #fff;
+              background: var(--white);
 
               span {
-                color: #060610;
+                color: var(--bodyblack);
               }
             }
           }

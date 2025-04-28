@@ -1,3 +1,5 @@
+@import "@/styles/theme/mixin.scss";
+
 .whychoosesectionmain {
   padding: 120px 0;
 
@@ -9,22 +11,17 @@
     padding: 60px 0;
   }
 
-  .whychoosetitle {
+  .whychoosetitlemobile {
     display: none;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 45px;
+    @include font35;
     text-align: center;
-    background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include fontgradient;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       display: block;
     }
     @media (max-width: 576px) {
-      font-size: 30px;
-      line-height: 40px;
+      @include font30;
     }
   }
 
@@ -37,10 +34,8 @@
 
     @media (max-width: 1024px) {
       flex-direction: column;
-    }
-    @media (max-width: 768px) {
-      margin: 30px 0 0 0;
       gap: 15px;
+      margin: 30px 0 0 0;
     }
 
     .circleimage {
@@ -52,6 +47,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
+      height: 100%;
+      display: none;
     }
 
     .whychooseverticleflx {
@@ -74,10 +72,18 @@
       }
 
       .whychoosecardbox {
-        background: #0e1020;
-        border: 1px solid #2f354b;
+        background: var(--darkblue2);
+        border: 1px solid var(--lightblue);
         border-radius: 20px;
         padding: 30px;
+
+        @media (max-width: 768px) {
+          padding: 20px;
+        }
+
+        @media (max-width: 576px) {
+          padding: 15px;
+        }
 
         .whychoosecardboxtitle {
           display: flex;
@@ -93,10 +99,14 @@
           .whychoosecardboxtitleicon {
             padding: 20px;
             border-radius: 50%;
-            background: linear-gradient(85.93deg, #00c0ff 0%, #4218b8 100%);
+            background: var(--gradientbuttonfilled);
 
             @media (max-width: 768px) {
               padding: 15px;
+            }
+
+            @media (max-width: 576px) {
+              height: 50px;
             }
 
             svg {
@@ -115,22 +125,25 @@
           }
 
           h4 {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 29px;
-            color: #fff;
+            @include font24;
+            color: var(--white);
+
+            @media (max-width: 768px) {
+              @include font20;
+            }
+
+            @media (max-width: 576px) {
+              @include font18;
+            }
           }
         }
 
         p {
-          font-size: 18px;
-          font-weight: 400;
-          line-height: 30px;
-          color: #bfbfbf;
-
+          @include font18;
+          color: var(--lightgray2);
+          
           @media (max-width: 576px) {
-            font-size: 16px;
-            line-height: 20px;
+            @include font16;
           }
         }
       }
@@ -142,20 +155,12 @@
       max-width: 377px;
 
       h1 {
-        font-size: 50px;
-        font-weight: 600;
-        line-height: 70px;
+        @include font50;
         text-align: center;
-        background: -webkit-linear-gradient(180deg, #bfabff 0%, #efebff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-
+        @include fontgradient;
+        
         @media (max-width: 1024px) {
-          font-size: 35px;
-          line-height: 45px;
-        }
-
-        @media (max-width: 768px) {
+          @include font35;
           display: none;
         }
       }

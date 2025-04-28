@@ -1,0 +1,86 @@
+@mixin font12 {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: normal;
+}
+@mixin font16 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+@mixin font18 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+@mixin font20 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+}
+@mixin font22 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+}
+@mixin font24 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+@mixin font25 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+}
+@mixin font26 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 34px;
+}
+@mixin font28 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+}
+@mixin font30 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 50px;
+}
+@mixin font33 {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 50px;
+}
+@mixin font35 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+}
+@mixin font40 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 45px;
+}
+@mixin font45 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 60px;
+}
+@mixin font50 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 61px;
+}
+@mixin font60 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 86px;
+}
+
+@mixin fontgradient {
+    background: var(--gradientedtext);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--transparent);
+}
