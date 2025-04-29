@@ -106,6 +106,10 @@
 
             .faqtitle {
               p {
+                overflow: hidden;
+                -webkit-line-clamp: 1;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
                 @include font20;
                 color: var(--white);
 

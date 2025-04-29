@@ -26,7 +26,7 @@ export default function Header() {
               </Link>
             </div>
             <div className={styles.headerlinksmain}>
-              <Link href={"/"}>Home</Link>
+              <Link href={"/"} className={styles.linkactive}>Home</Link>
               <Link href={"/"}>Humanize</Link>
               <Link href={"/"}>Pricing</Link>
               <Link href={"/"}>Blog</Link>

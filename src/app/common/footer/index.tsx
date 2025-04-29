@@ -12,16 +12,6 @@ export default function Footer() {
   return (
     <footer className={styles.footermain}>
       <div className="container">
-        <div className={styles.footersubsection}>
-          <div className={styles.footersubtitle}>
-            <h1>Subscribe Our Newslatter</h1>
-            <p>Get started to up your business personal AI Detector</p>
-          </div>
-          <div className={styles.footersubfieldsmain}>
-            <input type="email" placeholder="Enter your email" />
-            <CommonButton Text="Subscribe Now" Icon="" />
-          </div>
-        </div>
         <div className={styles.footercontentmain}>
           <div className={styles.footercontentleft}>
             <Logo />

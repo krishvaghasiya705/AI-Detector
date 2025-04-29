@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./whychoosesection.module.scss";
 import Image from "next/image";
-import Circleringimage from "@/assets/image/circlerings.png";
+// import Circleringimage from "@/assets/image/circlerings.png";
 import Educatoricon from './../../../../assets/icons/educatoricon';
 import Creatoricon from './../../../../assets/icons/creatoricon';
 
@@ -11,14 +11,14 @@ export default function Whychoosesection() {
       <div className="container">
         <h1 className={styles.whychoosetitlemobile}>Why Choose Our AI Content Detector?</h1>
         <div className={styles.whychoosesection}>
-          <div className={styles.circleimage}>
+          {/* <div className={styles.circleimage}>
             <Image
               src={Circleringimage}
               alt="Circleringimage"
               width={1000}
               height={1000}
             />
-          </div>
+          </div> */}
           <div className={styles.whychooseverticleflx}>
             <div className={styles.whychoosecardbox}>
               <div className={styles.whychoosecardboxtitle}>

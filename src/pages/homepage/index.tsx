@@ -7,6 +7,7 @@ import Trustedexpertsection from "@/app/components/homepagecomponents/trustedexp
 import Planssection from "@/app/components/homepagecomponents/planssection";
 import Commonqueriessection from "@/app/components/homepagecomponents/commonqueriessection";
 import Regularupdatesection from "@/app/components/homepagecomponents/regularupdatesection";
+import Subsnewlatter from "@/app/components/homepagecomponents/subscribenewslatter";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Planssection />
       <Commonqueriessection />
       <Regularupdatesection />
+      <Subsnewlatter />
     </>
   );
 }

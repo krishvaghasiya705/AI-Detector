@@ -7,14 +7,16 @@
   left: 0;
   z-index: 99;
   width: 100%;
-  background-color: var(--bodyblack);
+  // background-color: var(--bodyblack);
+  background-color: var(--transparent2);
+  backdrop-filter: blur(6px);
 
   @media (max-width: 1024px) {
     padding: 30px 0;
   }
 
   @media (max-width: 768px) {
-    padding: 20px 0;
+    padding: 15px 0;
   }
 
   .headerflx {
@@ -53,6 +55,10 @@
         transition: 0.4s ease-in-out;
 
         &:hover {
+          color: var(--white);
+        }
+        
+        &.linkactive {
           color: var(--white);
         }
       }
