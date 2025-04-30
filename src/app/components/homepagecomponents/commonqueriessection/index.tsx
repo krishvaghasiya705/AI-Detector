@@ -72,14 +72,13 @@ export default function Commonqueriessection() {
                 );
               })}
             </div>
-            <div className={styles.commonqueriessectionflximage}>
               <Image
                 src={commonqueriesimage}
                 alt="commonqueriesimage"
+                className={styles.commonqueriessectionflximage}
                 width={1000}
                 height={1000}
               />
-            </div>
           </div>
         </div>
       </div>

@@ -56,11 +56,10 @@
           margin: 0 0 14px 0;
           
           @media (max-width: 768px) {
-            height: 250px;
+            height: auto;
             border-radius: 18px;
           }
           @media (max-width:576px) {
-            height: 180px;
             border-radius: 12px;
           }
         }
