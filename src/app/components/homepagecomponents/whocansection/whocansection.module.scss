@@ -18,7 +18,7 @@
       max-width: 939px;
       margin: 0 auto;
       h1 {
-        @include font50;
+        @include font40;
         margin: 0 0 16px 0;
         @include fontgradient;
         text-align: center;
@@ -37,15 +37,12 @@
       }
 
       p {
-        @include font20;
+        @include font18;
         text-align: center;
         color: var(--lightgray2);
         max-width: 705px;
         margin: 0 auto;
-        
-        @media (max-width: 768px) {
-          @include font18;
-        }
+
         @media (max-width: 576px) {
           @include font16;
         }
@@ -88,9 +85,9 @@
         .whocancardimage {
           max-width: 300px;
           width: 100%;
-          height: 340px;
-          border-radius: 20px;
+          height: 300px;
           overflow: hidden;
+          border-radius: 20px;
           
           @media (max-width: 1024px) {
             max-width: none;
@@ -108,6 +105,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          gap: 30px;
 
           @media (max-width:1024px) {
             max-width: none;
@@ -143,12 +141,12 @@
           }
 
           h5 {
-            @include font24;
+            @include font22;
             color: var(--white);
             margin: 0 0 12px 0;
           }
           p {
-            @include font18;
+            @include font16;
             color: var(--lightgray2);
             display: -webkit-box;
             -webkit-box-orient: vertical;

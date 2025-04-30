@@ -25,7 +25,7 @@ export default function Whocansection() {
           <div className={styles.whocancardsgrid}>
             <div className={styles.whocancard}>
               <div className={styles.whocancardimage}>
-                <Image src={whocanimage1} alt="whocanimage1" />
+                <Image src={whocanimage1} alt="whocanimage1" className={styles.whocancardimage} />
               </div>
               <div className={styles.whocancardcontent}>
                 <div className={styles.whocancardcontenticondiv}>

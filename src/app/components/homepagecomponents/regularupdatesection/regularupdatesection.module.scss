@@ -17,7 +17,7 @@
   .regularupdatesection {
     .regularupdatesectiontitle {
       h1 {
-        @include font50;
+        @include font40;
         text-align: center;
         @include fontgradient;
 
@@ -52,7 +52,7 @@
         .regularupdatecardimage {
           height: 300px;
           border-radius: 20px;
-          overflow: hidden;
+          object-fit: fill;
           margin: 0 0 14px 0;
           
           @media (max-width: 768px) {
@@ -94,7 +94,7 @@
             }
           }
 
-          a {
+          .readmorelink {
             @include font18;
             color: var(--white);
             text-decoration-line: underline;

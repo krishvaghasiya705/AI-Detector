@@ -34,7 +34,7 @@
     max-width: 964px;
     margin: 0 auto 60px auto;
     h1 {
-      @include font60;
+      @include font50;
       color: var(--white);
       text-align: center;
       margin: 0 auto 18px auto;
@@ -127,13 +127,10 @@
       }
     }
     .herobannerparagraph {
-      @include font20;
+      @include font18;
       color: var(--lightgray2);
       text-align: center;
 
-      @media (max-width: 768px) {
-        @include font18;
-      }
       @media (max-width: 576px) {
         @include font16;
       }

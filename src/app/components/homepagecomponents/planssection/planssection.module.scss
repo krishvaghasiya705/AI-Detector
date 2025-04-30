@@ -23,25 +23,18 @@
       span {
         color: var(--white) !important;
       }
-      &:hover {
-        background: var(--white) !important;
-
-        span {
-          color: var(--bodyblack) !important;
-        }
-      }
     }
 
     .planbutton {
       background: var(--transparent);
       border-radius: 60px;
-      padding: 16px 30px;
+      padding: 13px 24px;
       transition: 0.4s ease-in-out;
       cursor: pointer;
       border: none;
 
       span {
-        @include font18;
+        @include font16;
         color: var(--white);
       }
 
@@ -56,7 +49,7 @@
     .planssectiontitle {
       margin: 0 0 60px 0;
       h1 {
-        @include font50;
+        @include font40;
         text-align: center;
         @include fontgradient;
 
@@ -100,7 +93,7 @@
         }
 
         .palntimelinemain {
-          margin: 0 0 50px 0;
+          margin: 0 0 40px 0;
 
           @media (max-width: 1024px) {
             margin: 0 0 30px 0;
@@ -125,7 +118,7 @@
 
         .slectedplandetails {
           h5 {
-            @include font24;
+            @include font22;
             color: var(--white);
             margin: 0 0 30px 0;
 
@@ -182,15 +175,11 @@
               }
 
               p {
-                @include font18;
+                @include font16;
                 color: var(--lightgray4);
 
                 span {
                   color: var(--white);
-                }
-
-                @media (max-width: 576px) {
-                  @include font16;
                 }
               }
             }
@@ -238,7 +227,7 @@
           display: flex;
           align-items: center;
           justify-content: space-between;
-          gap: 30px;
+          gap: 15px;
           transition: 0.4s ease-in-out;
 
           @media (max-width: 1024px) {
@@ -248,13 +237,11 @@
           @media (max-width: 768px) {
             flex-direction: column;
             align-items: start;
-            gap: 20px;
           }
 
           @media (max-width: 576px) {
             padding: 18px 20px;
             align-items: start;
-            gap: 15px;
           }
 
           .plantypeboxandprice {
@@ -297,7 +284,7 @@
               }
 
               p {
-                @include font24;
+                @include font22;
                 color: var(--white);
                 
                 @media (max-width: 768px) {
@@ -315,21 +302,21 @@
               gap: 8px;
 
               h6 {
-                @include font30;
+                @include font24;
                 text-align: right;
                 color: var(--white);
                 
                 @media (max-width: 768px) {
-                  @include font28;
+                  @include font20;
                 }
                 
                 @media (max-width: 576px) {
-                  @include font25;
+                  @include font18;
                 }
               }
 
               span {
-                @include font18;
+                @include font16;
                 text-align: right;
                 color: var(--white);
                 opacity: 0.6;
@@ -339,7 +326,7 @@
 
           .planbutton {
             width: 100%;
-            max-width: 191px;
+            max-width: fit-content;
             background: var(--gradientbuttonfilled);
           }
 

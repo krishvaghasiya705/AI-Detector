@@ -28,8 +28,8 @@ export default function Herobanner() {
         </div>
         <div className={styles.herobannerchatsectionmain}>
           <div className={styles.herobannereffectbuttonmainflx}>
-            <Commonbuttonsecond Text="Easy" Icon={<Sparkle/>} />
-            <Commonbuttonsecond Text="Aggresive" Icon={<Sparkle/>} />
+            <Commonbuttonsecond Text="Easy" Icon={<Sparkle/>} buttonslim="commonbuttonsecondslim" />
+            <Commonbuttonsecond Text="Aggresive" Icon={<Sparkle/>} buttonslim="commonbuttonsecondslim" />
             {/* <div className={styles.herobannereffectbuttonmain}>
               <button type="button" className={styles.herobannereffectbutton}>
                 <Sparkle />
@@ -50,13 +50,13 @@ export default function Herobanner() {
                 <div className={styles.herobannerchataitotalwords}>
                   <span>0/1000</span>
                 </div>
-                <Commonbuttonsecond Text="Check For AI" Icon="" />
+                <Commonbuttonsecond Text="Check For AI" Icon="" buttonslim="" />
               </div>
             </div>
             <div className={styles.herobannerchat}>
               <textarea></textarea>
               <div className={styles.herobannerchatbottom}>
-                <CommonButton Text="Humanize" Icon="" />
+                <CommonButton Text="Humanize" Icon="" buttonslim="" />
               </div>
             </div>
           </div>

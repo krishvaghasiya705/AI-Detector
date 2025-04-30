@@ -6,11 +6,17 @@
   border-radius: 50px;
   border: none;
 
+  &.commonbuttonsecondslim{
+    .commonbuttonsecond {
+      padding: 11px 20px;
+    }
+  }
+
   .commonbuttonsecond {
     background-color: var(--darkblue2);
     border-radius: 50px;
     cursor: pointer;
-    padding: 16px 30px;
+    padding: 14px 30px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -28,13 +34,9 @@
     }
 
     span {
-      @include font18;
+      @include font16;
       color: var(--white);
       text-transform: uppercase;
-
-      @media (max-width:768px) {
-        @include font16;
-      }
     }
 
     &:hover {

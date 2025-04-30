@@ -33,8 +33,8 @@ export default function Header() {
               <Link href={"/"}>Contact Us</Link>
             </div>
             <div className={styles.headerbuttons}>
-              <CommonButton Text="Sign In" Icon="" />
-              <Commonbuttonsecond Text="Log In" Icon="" />
+              <CommonButton Text="Sign In" Icon="" buttonslim=""/>
+              <Commonbuttonsecond Text="Log In" Icon="" buttonslim=""/>
             </div>
             <div
               className={styles.headermenuicon}

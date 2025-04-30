@@ -15,16 +15,14 @@ export default function Regularupdatesection() {
             <h1>Our Regular Update Blog and media </h1>
           </div>
           <div className={style.regularupdatesectioncardsgrd}>
-            <Link href={"/"}>
               <div className={style.regularupdatecard}>
-                <div className={style.regularupdatecardimage}>
                   <Image
+                    className={style.regularupdatecardimage}
                     src={Cardimage1}
                     alt="Cardimage1"
                     width={1000}
                     height={1000}
                   />
-                </div>
                 <div className={style.regularupdatecardcontent}>
                   <div className={style.regularupdatecardnameanddate}>
                     <p>Kevin Gohil</p>
@@ -33,20 +31,17 @@ export default function Regularupdatesection() {
                   <div className={style.regularupdatecardparagraph}>
                     <p>Is it possible for teachers to detect chatgpt?</p>
                   </div>
-                  <Link href={"/"}>Read More</Link>
+                  <span className={style.readmorelink}>Read More</span>
                 </div>
               </div>
-            </Link>
-            <Link href={"/"}>
               <div className={style.regularupdatecard}>
-                <div className={style.regularupdatecardimage}>
                   <Image
+                    className={style.regularupdatecardimage}
                     src={Cardimage2}
                     alt="Cardimage2"
                     width={1000}
                     height={1000}
                   />
-                </div>
                 <div className={style.regularupdatecardcontent}>
                   <div className={style.regularupdatecardnameanddate}>
                     <p>Kevin Gohil</p>
@@ -55,20 +50,17 @@ export default function Regularupdatesection() {
                   <div className={style.regularupdatecardparagraph}>
                     <p>How to Detect AI Writing - Write like a human</p>
                   </div>
-                  <Link href={"/"}>Read More</Link>
+                  <span className={style.readmorelink}>Read More</span>
                 </div>
               </div>
-            </Link>
-            <Link href={"/"}>
               <div className={style.regularupdatecard}>
-                <div className={style.regularupdatecardimage}>
                   <Image
+                    className={style.regularupdatecardimage}
                     src={Cardimage3}
                     alt="Cardimage3"
                     width={1000}
                     height={1000}
                   />
-                </div>
                 <div className={style.regularupdatecardcontent}>
                   <div className={style.regularupdatecardnameanddate}>
                     <p>Kevin Gohil</p>
@@ -77,10 +69,9 @@ export default function Regularupdatesection() {
                   <div className={style.regularupdatecardparagraph}>
                     <p>AI Content Detection: How does it work?</p>
                   </div>
-                  <Link href={"/"}>Read More</Link>
+                  <span className={style.readmorelink}>Read More</span>
                 </div>
               </div>
-            </Link>
           </div>
         </div>
       </div>

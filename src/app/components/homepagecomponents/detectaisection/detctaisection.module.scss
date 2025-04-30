@@ -15,7 +15,7 @@
     margin: 0 auto;
 
     h1 {
-      @include font50;
+      @include font40;
       @include fontgradient;
       text-align: center;
 
@@ -32,13 +32,9 @@
 
     p {
       margin: 16px 0 0 0;
-      @include font20;
+      @include font18;
       text-align: center;
       color: var(--lightgray2);
-      
-      @media (max-width: 768px) {
-        @include font18;
-      }
       
       @media (max-width: 576px) {
         @include font16;
@@ -233,13 +229,13 @@
           }
 
           h3 {
-            @include font24;
+            @include font22;
             text-align: center;
             color: var(--white);
           }
 
           p {
-            @include font18;
+            @include font16;
             text-align: center;
             color: var(--lightgray2);
             margin-top: 20px;

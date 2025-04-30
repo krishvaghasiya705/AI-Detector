@@ -15,7 +15,7 @@ export default function Powerfullsection() {
               feature is crafted to ensure reliability, speed, and security in
               your detection process.
             </p>
-            <CommonButton Text="Trial For Free Now" Icon="" />
+            <CommonButton Text="Trial For Free Now" Icon="" buttonslim="" />
           </div>
           <div className={styles.powerfullsectionright}>
             <div className={styles.powerfullsectionrightbox}>

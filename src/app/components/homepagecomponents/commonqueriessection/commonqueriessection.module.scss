@@ -19,6 +19,7 @@
       h1 {
         @include font50;
         text-align: center;
+        margin: 0 0 15px 0;
         @include fontgradient;
 
         @media (max-width: 1024px) {
@@ -154,12 +155,8 @@
             }
 
             p {
-              @include font18;
+              @include font16;
               color: var(--lightgray4);
-
-              @media (max-width: 576px) {
-                @include font16;
-              }
             }
           }
 

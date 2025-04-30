@@ -13,7 +13,7 @@ export default function Subsnewlatter() {
           </div>
           <div className={styles.footersubfieldsmain}>
             <input type="email" placeholder="Enter your email" />
-            <CommonButton Text="Subscribe Now" Icon="" />
+            <CommonButton Text="Subscribe Now" Icon="" buttonslim="" />
           </div>
         </div>
       </div>

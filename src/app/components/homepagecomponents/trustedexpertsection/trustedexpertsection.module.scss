@@ -15,7 +15,7 @@
     max-width: 839px;
     margin: 0 auto 60px auto;
     h1 {
-      @include font50;
+      @include font40;
       text-align: center;
       @include fontgradient;
       
@@ -134,17 +134,12 @@
       }
 
       p {
-        @include font18;
+        @include font16;
         color: var(--lightgray2);
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 7;
         overflow: hidden;
-        
-        @media (max-width: 576px) {
-          -webkit-line-clamp: 4;
-          @include font16;
-        }
       }
     }
   }

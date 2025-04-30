@@ -23,14 +23,14 @@
     }
 
     .powerfullsectionleft {
-      max-width: 550px;
+      max-width: 480px;
 
       @media (max-width: 1024px) {
         max-width: none;
       }
 
       h1 {
-        @include font50;
+        @include font40;
         @include fontgradient;
         margin: 0 0 16px 0;
         
@@ -48,13 +48,10 @@
       }
 
       p {
-        @include font20;
+        @include font18;
         color: var(--lightgray2);
         margin: 0 0 42px 0;
-        
-        @media (max-width: 768px){
-          @include font18;
-        }
+
         @media (max-width: 576px){
           @include font16;
         }
@@ -94,7 +91,7 @@
         }
 
         h1 {
-          @include font24;
+          @include font22;
           color: var(--white);
           max-width: 330px;
           width: 100%;
@@ -106,6 +103,7 @@
           @media (max-width:768px) {
             @include font20;
           }
+
           @media (max-width:576px) {
             @include font18;
           }
@@ -114,13 +112,10 @@
         p {
           width: 100%;
           max-width: 450px;
-          @include font18;
+          @include font16;
           color: var(--lightgray2);
           @media (max-width:768px) {
             max-width: none;
-          }
-          @media (max-width:576px) {
-            @include font16;
           }
         }
       }

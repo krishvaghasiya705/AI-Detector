@@ -48,8 +48,8 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
           </div>
         </div>
         <div className={styles.sidebarfooter}>
-          <CommonButton Text="Sign In" Icon="" />
-          <Commonbuttonsecond Text="Log In" Icon="" />
+          <CommonButton Text="Sign In" Icon="" buttonslim="" />
+          <Commonbuttonsecond Text="Log In" Icon="" buttonslim="" />
         </div>
       </aside>
     </>
