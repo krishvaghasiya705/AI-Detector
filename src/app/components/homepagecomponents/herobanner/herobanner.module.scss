@@ -8,10 +8,10 @@
   position: relative;
 
   @media (max-width: 1024px) {
-    padding: 150px 0 100px 0;
+    padding: 120px 0 100px 0;
   }
   @media (max-width: 768px) {
-    padding: 120px 0 60px 0;
+    padding: 90px 0 60px 0;
   }
 
   .homeherobannerhshapedbgimage {
@@ -151,13 +151,11 @@
 
     .herobannereffectbuttonmainflx {
       display: flex;
-      align-items: center;
       gap: 20px;
       margin: 0 0 18px 0;
 
       @media (max-width:576px) {
-        flex-direction: column;
-        align-items: start;
+        flex-wrap: wrap;
         // display: grid;
         // grid-template-columns: repeat(1,1fr);
         // width: fit-content;

@@ -114,22 +114,22 @@
 
     .trustedexpertcardchat {
       max-width: 360px;
-      height: 360px;
       border: 1px solid var(--lightblue);
       border-radius: 30px;
       background: var(--darkblue);
       padding: 20px;
       display: flex;
       flex-direction: column;
+      gap: 78px;
       justify-content: space-between;
-
+      
       @media (max-width: 1024px) {
+        gap: 50px;
         max-width: none;
-        height: 250px;
       }
       
       @media (max-width: 576px) {
-        height: 200px;
+        gap: 30px;
         border-radius: 20px;
       }
 
@@ -140,6 +140,14 @@
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 7;
         overflow: hidden;
+        
+        @media (max-width:768px) {
+          -webkit-line-clamp: 6;
+        }
+
+        @media (max-width:576px) {
+          -webkit-line-clamp: 5;
+        }
       }
     }
   }

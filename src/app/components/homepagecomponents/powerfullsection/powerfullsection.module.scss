@@ -33,7 +33,7 @@
         @include font40;
         @include fontgradient;
         margin: 0 0 16px 0;
-        
+
         @media (max-width: 1024px) {
           @include font45;
         }
@@ -52,7 +52,7 @@
         color: var(--lightgray2);
         margin: 0 0 42px 0;
 
-        @media (max-width: 576px){
+        @media (max-width: 576px) {
           @include font16;
         }
       }
@@ -80,41 +80,42 @@
         gap: 30px;
         border-top: 1px solid var(--lightblue);
 
-        @media (max-width:768px) {
+        @media (max-width: 768px) {
           padding: 25px 0 0 0;
           flex-direction: column;
           gap: 20px;
         }
-        @media (max-width:576px) {
+        @media (max-width: 576px) {
           padding: 20px 0 0 0;
           gap: 18px;
         }
 
         h1 {
+          word-break: break-word;
           @include font22;
           color: var(--white);
           max-width: 330px;
           width: 100%;
-          
+
           span {
             margin: 0 20px 0 0;
           }
-          
-          @media (max-width:768px) {
+
+          @media (max-width: 768px) {
             @include font20;
           }
 
-          @media (max-width:576px) {
+          @media (max-width: 576px) {
             @include font18;
           }
         }
-        
+
         p {
           width: 100%;
           max-width: 450px;
           @include font16;
           color: var(--lightgray2);
-          @media (max-width:768px) {
+          @media (max-width: 768px) {
             max-width: none;
           }
         }
