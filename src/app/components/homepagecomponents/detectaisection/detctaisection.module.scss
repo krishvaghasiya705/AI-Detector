@@ -35,7 +35,7 @@
       @include font18;
       text-align: center;
       color: var(--lightgray2);
-      
+
       @media (max-width: 576px) {
         @include font16;
       }
@@ -47,6 +47,10 @@
     grid-template-columns: repeat(3, 1fr);
     margin-top: 60px;
     gap: 28px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     @media (max-width: 768px) {
       grid-template-columns: repeat(1, 1fr);
@@ -86,7 +90,11 @@
         transform: translateY(-50%);
         background: var(--gradientedtext);
 
+        @media (max-width: 1024px) {
+          display: none;
+        }
         @media (max-width: 768px) {
+          display: block;
           right: 50%;
           bottom: auto;
           top: -29px;

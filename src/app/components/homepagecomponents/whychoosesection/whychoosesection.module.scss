@@ -16,6 +16,8 @@
     @include font35;
     text-align: center;
     @include fontgradient;
+    position: relative;
+    z-index: 2;
 
     @media (max-width: 1024px) {
       display: block;
@@ -34,7 +36,6 @@
 
     @media (max-width: 1024px) {
       grid-template-columns: 1fr;
-      gap: 15px;
       margin: 30px 0 0 0;
     }
 
