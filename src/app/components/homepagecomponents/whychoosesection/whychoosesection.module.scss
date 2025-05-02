@@ -173,6 +173,10 @@
       max-width: 377px;
       margin: 0 auto;
 
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
       h1 {
         @include font40;
         @include fontgradient;

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import styles from "./commonqueriessection.module.scss";
 import commonqueriesimage from "@/assets/image/commonqueriesimage.png";
@@ -31,7 +31,7 @@ export default function Commonqueriessection() {
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {
-    setActiveIndex(prev => (prev === index ? null : index));
+    setActiveIndex((prev) => (prev === index ? null : index));
   };
 
   return (
@@ -52,7 +52,9 @@ export default function Commonqueriessection() {
                 return (
                   <div
                     key={index}
-                    className={`${styles.faqitem} ${isActive ? styles.active : ""}`}
+                    className={`${styles.faqitem} ${
+                      isActive ? styles.active : ""
+                    }`}
                   >
                     <div
                       className={`${styles.commonquerisfaqbox}`}
@@ -72,13 +74,14 @@ export default function Commonqueriessection() {
                 );
               })}
             </div>
+            <div className={styles.commonqueriessectionflximage}>
               <Image
                 src={commonqueriesimage}
                 alt="commonqueriesimage"
-                className={styles.commonqueriessectionflximage}
                 width={1000}
                 height={1000}
               />
+            </div>
           </div>
         </div>
       </div>
