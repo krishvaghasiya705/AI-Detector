@@ -14,7 +14,9 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footercontentmain}>
           <div className={styles.footercontentleft}>
-            <Logo />
+            <Link href={"/"}>
+              <Logo />
+            </Link>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -24,21 +26,21 @@ export default function Footer() {
           </div>
           <div className={styles.footercontentright}>
             <div className={styles.footerlinksboxmain}>
-                <p>Useful Links</p>
-                <div className={styles.footerlinksflx}>
-                    <Link href={"/"}>Home</Link>
-                    <Link href={"/"}>Pricing</Link>
-                    <Link href={"/"}>Blog</Link>
-                    <Link href={"/"}>Contact Us</Link>
-                </div>
+              <p>Useful Links</p>
+              <div className={styles.footerlinksflx}>
+                <Link href={"/"}>Home</Link>
+                <Link href={"/"}>Pricing</Link>
+                <Link href={"/"}>Blog</Link>
+                <Link href={"/"}>Contact Us</Link>
+              </div>
             </div>
             <div className={styles.footerlinksboxmain}>
-                <p>Company</p>
-                <div className={styles.footerlinksflx}>
-                    <Link href={"/"}>Sitemap</Link>
-                    <Link href={"/"}>Privacy Policy</Link>
-                    <Link href={"/"}>Terms & Condition</Link>
-                </div>
+              <p>Company</p>
+              <div className={styles.footerlinksflx}>
+                <Link href={"/"}>Sitemap</Link>
+                <Link href={"/"}>Privacy Policy</Link>
+                <Link href={"/"}>Terms & Condition</Link>
+              </div>
             </div>
           </div>
         </div>

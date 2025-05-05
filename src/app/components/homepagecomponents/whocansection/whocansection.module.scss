@@ -97,6 +97,10 @@
             border-radius: 15px;
             height: 100%;
           }
+          
+          img {
+            object-fit: fill;
+          }
         }
 
         .whocancardcontent {
