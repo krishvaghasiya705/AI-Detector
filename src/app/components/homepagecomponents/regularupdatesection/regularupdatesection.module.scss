@@ -71,7 +71,7 @@
             border-radius: 18px;
           }
           @media (max-width:576px) {
-            border-radius: 12px;
+            border-radius: 0;
           }
         }
 
@@ -91,13 +91,15 @@
 
           .regularupdatecardparagraph {
             margin: 0 0 22px 0;
+
+            @media (max-width: 576px) {
+              margin: 0;
+            }
+
             p {
-              @include font22;
+              @include font20;
               color: var(--white);
-              
-              @media (max-width:1024px) {
-                @include font20;
-              }
+
               @media (max-width:576px) {
                 margin: 0 0 10px 0;
                 @include font18;
@@ -109,6 +111,10 @@
             @include font18;
             color: var(--white);
             text-decoration-line: underline;
+
+            @media (max-width:576px) {
+              @include font16;
+            }
           }
         }
       }

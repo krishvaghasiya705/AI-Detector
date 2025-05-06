@@ -26,11 +26,19 @@
         @include font26;
         color: var(--white);
         margin: 0 0 12px 0;
+      
+        @media (max-width: 1024px) {
+          @include font24;
+        }
       }
 
       p {
         @include font20;
         color: var(--lightgray4);
+
+        @media (max-width: 1024px) {
+          @include font18;
+        }
       }
     }
 
@@ -56,9 +64,6 @@
 
         @media (max-width:1024px) {
           padding: 11px 20px;
-        }
-        @media (max-width:576px) {
-          max-width: none;
         }
       }
 
