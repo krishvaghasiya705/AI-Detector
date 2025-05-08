@@ -88,7 +88,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
-        max-width: none;
+        max-width: 100%;
       }
       @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
@@ -164,6 +164,10 @@
         p {
           @include font16;
           color: var(--lightgray2);
+          display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
         }
       }
     }

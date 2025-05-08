@@ -25,12 +25,11 @@
     align-items: center;
 
     .headerlogo {
-      @media (max-width: 576px) {
-        width: 180px;
-      }
-
       svg {
         width: 100%;
+        @media (max-width: 576px) {
+          max-width: 180px;
+        }
       }
     }
 
@@ -56,7 +55,7 @@
         &:hover {
           color: var(--white);
         }
-        
+
         &.linkactive {
           color: var(--white);
         }

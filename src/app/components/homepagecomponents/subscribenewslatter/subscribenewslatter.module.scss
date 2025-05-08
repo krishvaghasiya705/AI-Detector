@@ -1,75 +1,74 @@
 @import "@/styles/theme/mixin.scss";
 
 .footersubsection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    padding: 120px 0 0 0;
-    // border-bottom: 1px solid var(--lightcyan2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 120px 0 0 0;
+  // border-bottom: 1px solid var(--lightcyan2);
 
-    @media (max-width: 1024px) {
-        padding: 100px 0 0 0;
-        flex-direction: column;
-        align-items: start;
-    }
+  @media (max-width: 1024px) {
+    padding: 100px 0 0 0;
+    flex-direction: column;
+    align-items: start;
+  }
 
-    @media (max-width: 768px) {
-        padding: 60px 0 0 0;
-    }
+  @media (max-width: 768px) {
+    padding: 60px 0 0 0;
+  }
 
-    .footersubtitle {
+  .footersubtitle {
+    h1 {
       max-width: 478px;
-      width: 100%;
+      @include font26;
+      color: var(--white);
+      margin: 0 0 12px 0;
 
-      h1 {
-        @include font26;
-        color: var(--white);
-        margin: 0 0 12px 0;
-      
-        @media (max-width: 1024px) {
-          @include font24;
-        }
-      }
-
-      p {
-        @include font20;
-        color: var(--lightgray4);
-
-        @media (max-width: 1024px) {
-          @include font18;
-        }
+      @media (max-width: 1024px) {
+        @include font24;
       }
     }
 
-    .footersubfieldsmain {
-      max-width: 700px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      @media (max-width:576px) {
-        flex-direction: column;
-        align-items: start;
-      }
+    p {
+      max-width: 478px;
+      @include font20;
+      color: var(--lightgray4);
 
-      input {
-        width: 100%;
-        border: 1px solid var(--lightcyan3);
-        border-radius: 50px;
-        padding: 17px 20px;
+      @media (max-width: 1024px) {
         @include font18;
-        color: var(--lightgray4);
-        background: var(--transparent);
-
-        @media (max-width:1024px) {
-          padding: 11px 20px;
-        }
-      }
-
-      button {
-        max-width: 193px;
-        width: 100%;
       }
     }
   }
+
+  .footersubfieldsmain {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @media (max-width: 576px) {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    input {
+      width: 100%;
+      border: 1px solid var(--lightcyan3);
+      border-radius: 50px;
+      padding: 17px 20px;
+      @include font18;
+      color: var(--lightgray4);
+      background: var(--transparent);
+
+      @media (max-width: 1024px) {
+        padding: 11px 20px;
+      }
+    }
+
+    button {
+      max-width: 193px;
+      width: 100%;
+    }
+  }
+}

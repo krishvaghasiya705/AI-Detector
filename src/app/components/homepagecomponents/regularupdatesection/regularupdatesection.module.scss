@@ -108,13 +108,10 @@
           }
 
           .readmorelink {
-            @include font18;
+            @include font16;
             color: var(--white);
+            cursor: pointer;
             text-decoration-line: underline;
-
-            @media (max-width:576px) {
-              @include font16;
-            }
           }
         }
       }
