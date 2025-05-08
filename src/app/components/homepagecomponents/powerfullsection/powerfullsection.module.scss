@@ -116,7 +116,7 @@
           max-width: 450px;
           @include font16;
           color: var(--lightgray2);
-          @media (max-width: 768px) {
+          @media (max-width: 1400px) {
             max-width: 100%;
           }
         }
