@@ -172,7 +172,7 @@
             overflow: hidden;
 
             @media (max-width: 576px) {
-              -webkit-line-clamp: 3;
+              -webkit-line-clamp: none;
             }
           }
         }

@@ -23,6 +23,10 @@
     }
 
     .powerfullsectionleft {
+      position: sticky;
+      top: 142px;
+      left: 0;
+      height: 100%;
       max-width: 480px;
 
       @media (max-width: 1024px) {
@@ -65,9 +69,11 @@
       flex-direction: column;
       gap: 50px;
 
+      @media (max-width: 1400px) {
+        gap: 30px;
+      }
       @media (max-width: 1024px) {
         max-width: 100%;
-        gap: 30px;
       }
       @media (max-width: 576px) {
         gap: 20px;
@@ -78,8 +84,12 @@
         justify-content: space-between;
         flex-wrap: wrap;
         padding: 34px 0 0 0;
-        gap: 30px;
+        gap: 15px;
         border-top: 1px solid var(--lightblue);
+
+        @media (max-width: 1400px) {
+          padding: 30px 0 0 0;
+        }
 
         @media (max-width: 768px) {
           padding: 25px 0 0 0;
